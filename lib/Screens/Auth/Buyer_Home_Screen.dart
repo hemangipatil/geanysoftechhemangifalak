@@ -127,6 +127,7 @@ class _BuyerHomeScreenState extends State<BuyerHomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.deepPurple,
         title: Text('Buyer Home'),
         actions: [
           GestureDetector(

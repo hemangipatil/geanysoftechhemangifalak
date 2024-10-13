@@ -25,6 +25,7 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.deepPurple,
         title: Text(widget.product['title'], style: TextStyle(fontWeight: FontWeight.bold)),
         actions: [
           Stack(
@@ -80,7 +81,7 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
                 style: TextStyle(
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
-                  color: Colors.deepOrangeAccent,
+                  color: Colors.deepPurple,
                 ),
               ),
               SizedBox(height: 10),
@@ -124,9 +125,9 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
                 child: ElevatedButton.icon(
                   onPressed: _addToCart,
                   icon: Icon(Icons.add_shopping_cart),
-                  label: Text('Add to Cart'),
+                  label: Text('Add to Cart',style: TextStyle(color: Colors.white),),
                   style: ElevatedButton.styleFrom(
-                    padding: EdgeInsets.symmetric(horizontal: 24, vertical: 12), backgroundColor: Colors.deepOrangeAccent,
+                    padding: EdgeInsets.symmetric(horizontal: 24, vertical: 12), backgroundColor: Colors.deepPurple,
                     textStyle: TextStyle(fontSize: 18),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(12),
